@@ -37,4 +37,5 @@ sudo chown -R keycloak: /opt/keycloak
 sudo chmod o+x /opt/keycloak/bin/
 ```
 
-**5. 
+**5. Create a service to start Keycloak:**
+
