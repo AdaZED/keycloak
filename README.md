@@ -31,4 +31,10 @@ sudo groupadd keycloak
 sudo useradd -r -g keycloak -d /opt/keycloak -s /sbin/nologin keycloak
 ```
 
-**4. Adjusting the permissions for the keycloak installation directory:**
+**4. Adjusting the permissions for the keycloak directory:**
+```
+sudo chown -R keycloak: /opt/keycloak
+sudo chmod o+x /opt/keycloak/bin/
+```
+
+**5. 
