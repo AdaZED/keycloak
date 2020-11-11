@@ -25,3 +25,8 @@ sudo mv keycloak-11.0.3 keycloak
 
 **3. Create user and group for keycloak**
 
+Keycloak should not be run as a root user. So create a group *keycloak* and add the new user *keycloak* to this group:
+```
+sudo groupadd keycloak
+sudo useradd -r -g keycloak -d /opt/keycloak -s /sbin/nologin keycloak
+```
